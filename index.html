@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ParisGirl 조견표 생성기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="parisTable.js"></script>
+    <div class="content">
+        <div class="tableTitle">
+            <span>PRODUCT INFO</span>
+        </div>
+        <div class="table">
+            <div class="tableHead">
+            </div>
+            <div class="tableBody">
+            </div>
+        </div>
+    </div>
+    <div class="input">
+        <span>테이블 명</span>
+        <input class="inputTableName" type="text">
+        <span>내용</span>
+        <span>col1</span>
+        <input class="inputTableCol1" type="text">
+        <span>col2</span>
+        <input class="inputTableCol2" type="text">
+        <span>col3</span>
+        <input class="inputTableCol3" type="text">
+        <button onclick="addColumn()">추가</button>
+        <button onclick="downloadImg()">이미지 저장</button>
+    </div>
+</body>
+</html>
