@@ -14,7 +14,7 @@ html, body {margin: 0; padding: 0; font-family: "Noto Sans KR", sans-serif;}
 .tableTitle {
     position: relative;
     top: 30px;
-    left: 420px;
+    left: 320px;
     background-color: #1d1d1d;
     color: white;
     width: 200px;
@@ -25,6 +25,7 @@ html, body {margin: 0; padding: 0; font-family: "Noto Sans KR", sans-serif;}
 .tableTitle > span {
     margin-top: 14px;
     font-size: 20px;
+    font-weight: bolder;
 }
 
 
@@ -66,8 +67,8 @@ html, body {margin: 0; padding: 0; font-family: "Noto Sans KR", sans-serif;}
 }
 .tableBody > div > div {
     display: flex;
-    justify-content: center;
-    width: 300px;
+    justify-content: start;
+    width: 200px;
     height: 40px;
     border-left: 1px solid #b3b3b3;
 }
@@ -87,6 +88,7 @@ html, body {margin: 0; padding: 0; font-family: "Noto Sans KR", sans-serif;}
     border: 2px solid rgb(170, 170, 170);
     margin-top: 14px;
     margin-right: 10px;
+    margin-left: 40px;
 }
 .checkBox:hover {
     cursor: pointer;
