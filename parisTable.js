@@ -1,23 +1,19 @@
-var _t_num = 0;
-
 var addColumn = function () {
-    var _th = document.getElementsByClassName('tableHead')[0];
-    var _td = document.getElementsByClassName('tableBody')[0];
+    var _th = $('.tableHead')[0];
+    var _td = $('.tableBody')[0];
 
-    var _n = document.getElementsByClassName('inputTableName')[0].value;
-    var _c1 = document.getElementsByClassName('inputTableCol1')[0].value;
-    var _c2 = document.getElementsByClassName('inputTableCol2')[0].value;
-    var _c3 = document.getElementsByClassName('inputTableCol3')[0].value;
+    var _n = $('.inputTableName')[0].value;
+    var _c1 =  $('.inputTableCol1')[0].value;
+    var _c2 =  $('.inputTableCol2')[0].value;
+    var _c3 =  $('.inputTableCol3')[0].value;
     
     var _newTh = document.createElement('div');
     var _newTd = document.createElement('div');
 
-    _newTh.setAttribute('class', 't'+_t_num);
     var _ele_th = document.createElement('span');
     _ele_th.innerHTML = _n;
     _newTh.appendChild(_ele_th);
 
-    _newTd.setAttribute('class', 't'+_t_num);
     var _ele_c1 = document.createElement('div');
     var _ele_c2 = document.createElement('div');
     var _ele_c3 = document.createElement('div');
@@ -36,8 +32,6 @@ var addColumn = function () {
 
     _th.appendChild(_newTh);
     _td.appendChild(_newTd);
-
-    _t_num += 1;
 };
 
 var downloadURI = function (_uri, _name) {
